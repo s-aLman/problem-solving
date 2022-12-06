@@ -1,4 +1,4 @@
-package impl.Recursion;
+package solve.Recursion.easy;
 
 import java.util.Stack;
 

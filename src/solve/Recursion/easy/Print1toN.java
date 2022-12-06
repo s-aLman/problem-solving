@@ -1,4 +1,4 @@
-package impl.Recursion;
+package solve.Recursion.easy;
 
 public class Print1toN {
 
