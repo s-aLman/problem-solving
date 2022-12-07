@@ -4,24 +4,24 @@ import java.util.Stack;
 
 public class SortStack {
 
-    static void insertAgain(Integer item, Stack<Integer> stk){
-        if(stk.isEmpty()) {
+    static void insertAgain(Integer item, Stack<Integer> stk) {
+        if (stk.isEmpty()) {
             stk.push(item);
             return;
         }
         Integer top = stk.peek();
-        if(top<=item){
+        if (top <= item) {
             stk.push(item);
             return;
-        }else{
+        } else {
             Integer curr = stk.pop();
             insertAgain(item, stk);
             insertAgain(curr, stk);
         }
     }
 
-    static void sortStackWithRecursion(Stack<Integer> stk){
-        if(stk.isEmpty())
+    static void sortStackWithRecursion(Stack<Integer> stk) {
+        if (stk.isEmpty())
             return;
         Integer item = stk.pop();
         sortStackWithRecursion(stk);
@@ -94,7 +94,7 @@ public class SortStack {
 
         long startTime = System.currentTimeMillis();
         sortStackWithRecursion(stk);
-        System.out.println("Total time: "+(double)(System.currentTimeMillis()-startTime)/1000);
+        System.out.println("Total time: " + (double) (System.currentTimeMillis() - startTime) / 1000);
         stk.stream().forEach(System.out::println);
     }
 }
