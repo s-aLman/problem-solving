@@ -1,4 +1,4 @@
-package solve.Recursion.easy;
+package practice.Recursion.Adhoc;
 
 public class CheckPalindrome {
     static boolean checkPalindromeUsingRecursion(String str) {
