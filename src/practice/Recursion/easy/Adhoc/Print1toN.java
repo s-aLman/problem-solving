@@ -1,4 +1,4 @@
-package practice.Recursion.Adhoc;
+package practice.Recursion.easy.Adhoc;
 
 public class Print1toN {
 
